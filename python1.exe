@@ -1,0 +1,165 @@
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> list=["madhavi",1,2,3,0.2,0.4]
+>>> list
+['madhavi', 1, 2, 3, 0.2, 0.4]
+>>> list.append("panyala")
+>>> list
+['madhavi', 1, 2, 3, 0.2, 0.4, 'panyala']
+>>> list.pop(3)
+3
+>>> list
+['madhavi', 1, 2, 0.2, 0.4, 'panyala']
+>>> list.index(2)
+2
+>>> list.reverse()
+>>> list
+['panyala', 0.4, 0.2, 2, 1, 'madhavi']
+>>> list.clear()
+>>> list
+[]
+>>> dict={"name":"madhavi","age":"20","number":"123"}
+>>> dict
+{'name': 'madhavi', 'age': '20', 'number': '123'}
+>>> dict('name')
+Traceback (most recent call last):
+  File "<pyshell#13>", line 1, in <module>
+    dict('name')
+TypeError: 'dict' object is not callable
+>>> dict("name")
+Traceback (most recent call last):
+  File "<pyshell#14>", line 1, in <module>
+    dict("name")
+TypeError: 'dict' object is not callable
+>>> dict["name"]
+'madhavi'
+>>> dict.popitem()
+('number', '123')
+>>> dict.get('age')
+'20'
+>>> dict["email"]="madhavireddypanyala@gmail.com"
+>>> dict
+{'name': 'madhavi', 'age': '20', 'email': 'madhavireddypanyala@gmail.com'}
+>>> set={"madhavi",1,2,2,3}
+>>> set.add(8)
+>>> set
+{1, 2, 3, 'madhavi', 8}
+>>> set.discard(2)
+>>> set
+{1, 3, 'madhavi', 8}
+>>> set.update([4,5,6])
+>>> set
+{1, 3, 'madhavi', 4, 5, 6, 8}
+>>> set.update([10,11],{set})
+Traceback (most recent call last):
+  File "<pyshell#27>", line 1, in <module>
+    set.update([10,11],{set})
+TypeError: unhashable type: 'set'
+>>> set
+{1, 3, 'madhavi', 4, 5, 6, 8}
+>>> set.update([10,11],{2,5,4})
+>>> set
+{1, 2, 3, 'madhavi', 4, 5, 6, 8, 10, 11}
+>>> set.pop(5)
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    set.pop(5)
+TypeError: pop() takes no arguments (1 given)
+>>> set.pop()
+1
+>>> set
+{2, 3, 'madhavi', 4, 5, 6, 8, 10, 11}
+>>> set.remove()
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    set.remove()
+TypeError: remove() takes exactly one argument (0 given)
+>>> set.remove(5)
+>>> set
+{2, 3, 'madhavi', 4, 6, 8, 10, 11}
+>>> tuple=('p','e','o','p','l','e')
+>>> tuple[0]
+'p'
+>>> tuple[-2]
+'l'
+>>> tuple.index('o')
+2
+>>> tuple[1:4]
+('e', 'o', 'p')
+>>> del.tuple()
+SyntaxError: invalid syntax
+>>> size(tuple)
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    size(tuple)
+NameError: name 'size' is not defined
+>>> size.tuple()
+Traceback (most recent call last):
+  File "<pyshell#44>", line 1, in <module>
+    size.tuple()
+NameError: name 'size' is not defined
+>>> tuple.count()
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    tuple.count()
+TypeError: count() takes exactly one argument (0 given)
+>>> del tuple()
+SyntaxError: cannot delete function call
+>>> list1=[1,2,3]
+>>> tuple2=tuple(list1)
+Traceback (most recent call last):
+  File "<pyshell#48>", line 1, in <module>
+    tuple2=tuple(list1)
+TypeError: 'tuple' object is not callable
+>>> print(tuple2)
+Traceback (most recent call last):
+  File "<pyshell#49>", line 1, in <module>
+    print(tuple2)
+NameError: name 'tuple2' is not defined
+>>> print(tuple(list1))
+Traceback (most recent call last):
+  File "<pyshell#50>", line 1, in <module>
+    print(tuple(list1))
+TypeError: 'tuple' object is not callable
+>>> tuple(list1)
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    tuple(list1)
+TypeError: 'tuple' object is not callable
+>>> string='madhavi'
+>>> string="""hello,madhavi how are you"""
+>>> sring
+Traceback (most recent call last):
+  File "<pyshell#54>", line 1, in <module>
+    sring
+NameError: name 'sring' is not defined
+>>> string="""hello,madhavi how are you"""
+>>> string[0]
+'h'
+>>> string[1:5]
+'ello'
+>>> string1='hello'
+>>> string2='madhavi'
+>>> string1+string2
+'hellomadhavi'
+>>> srting1+" "+string2
+Traceback (most recent call last):
+  File "<pyshell#61>", line 1, in <module>
+    srting1+" "+string2
+NameError: name 'srting1' is not defined
+>>> string1+ "space" +string2
+'hellospacemadhavi'
+>>> string1+ " " +string2
+'hello madhavi'
+>>> string1*3
+'hellohellohello'
+>>> a in string
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    a in string
+NameError: name 'a' is not defined
+>>> 'a' in 'string'
+False
+>>> 'st' in 'string'
+True
+>>> 
